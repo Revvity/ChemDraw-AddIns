@@ -1,5 +1,5 @@
 //
-// document-data-accessor.js
+// document-set-and-get-data.js
 //
 // ChemDraw JavaScript add-in example that demonstrates the usage of ChemDraw
 // JavaScript API for adding and getting data in the active document.
