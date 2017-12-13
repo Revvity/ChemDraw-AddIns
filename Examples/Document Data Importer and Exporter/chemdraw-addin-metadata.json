@@ -1,0 +1,7 @@
+{
+    "description": "An example add-in that demonstrates the usage of ChemDraw JavaScript API for adding and getting data in the active document. The supported data formats are CDXML, CDX encoded as Base64, SMILES, InChI, InChIKey, MolV2000, MolV3000, RXNV2000, RXNV3000, and PNG encoded as Base64.",
+    "version": "1.0",
+    "menuItemText": "Document Data Importer and Exporter",
+    "minimumAPIVersion": "1.0",
+    "url": "main.html"
+}
