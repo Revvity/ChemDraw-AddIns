@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://unify-dev.scienceaccelerated.com/1.0.5/pe.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="document-data-accessor.js"></script>
+
+    <title>Document Data Accessor</title>
+
+    <style>
+        #text-data {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="add-in-content">
+        <div class="modal-body">
+            <div class="row form-group">
+                <div class="col-xs-9">
+                    <div class="input-group-button">
+                        <button class="btn btn-default" id="add-data-button">Add Data</button>
+                        <button class="btn btn-default" id="get-data-button">Get Data</button>
+                        <button class="btn btn-default" id="clear-button">Clear</button>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <select id="data-format" class="form-control">
+                        <option value="cdxml" selected="selected ">CDXML</option>
+                        <option value="base64-cdx">Base64 CDX</option>
+                        <option value="smiles">SMILES</option>
+                        <option value="inchi">InChI</option>
+                        <option value="inchikey">InChIKey</option>
+                        <option value="molv2000">MolV2000</option>
+                        <option value="molv3000">MolV3000</option>
+                        <option value="mol">Mol</option>
+                        <option value="rxnv2000">RXNV2000</option>
+                        <option value="rxnv3000">RXNV3000</option>
+                            <optgroup label="PNG">
+                                <option value="png-default">PNG</option>
+                                <option value="png-scaled-150">PNG Scaled in 150%</option>
+                                <option value="png-scaled-75">PNG Scaled in 75%</option>
+                                <option value="png-with-background">PNG with Background</option>
+                                <option value="png-with-border">PNG with Border</option>
+                            </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group" id="text-content">
+                <div class="col-xs-12">
+                    <textarea class="form-control" rows="20" id="text-data"></textarea>
+                </div>
+            </div>
+            <div class="row form-group" id="image-content" hidden>
+                <div class="col-xs-12">
+                    <img class="img-responsive center-block" id="image-data"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
