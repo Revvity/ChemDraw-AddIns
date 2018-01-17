@@ -1,3 +1,5 @@
+BSD 4-Clause License
+
 Copyright (c) 2018, PerkinElmer, Inc.
 All rights reserved.
 
