@@ -5,11 +5,11 @@ Welcome to ChemDraw add-ins! This repository contains documentation and examples
 
 ### Windows
 
-You must install [ChemOffice Professional](http://www.cambridgesoft.com/Ensemble_for_Chemistry/ChemOffice/ChemOfficeProfessional/Default.aspx) 17.1 or above to install and run the add-in examples.
+You must install [ChemOffice Professional](http://www.perkinelmer.com/product/chemoffice-professional-chemofficepro) 17.1 or above to install and run the add-in examples.
 
 ### Mac OS X
 
-You must install [ChemDraw Professional](https://www.cambridgesoft.com/Ensemble_for_Chemistry/ChemDraw/ChemDrawProfessional/Default.aspx) 17.1 or above to install and run the add-in examples.
+You must install [ChemDraw Professional](http://www.perkinelmer.com/product/chemdraw-professional-chemdrawpro) 17.1 or above to install and run the add-in examples.
 
 ## Install Add-ins in ChemDraw
 
