@@ -21,6 +21,6 @@ To install an add-in, launch ChemDraw, go to **Add-ins>Add-in Manager...** to op
 
 To run an add-in, go to **Add-ins** menu, and click on the menu item that represents the add-in. For detailed instructions on how to run add-ins in ChemDraw, go to **Help>Contents>ChemDraw Add-ins**.
 
-## PerkinElmer
+## Support
 
-This project is supported by the ChemDraw development team from [PerkinElmer, Inc.](www.perkinelmer.com)
+This project is developed by [PerkinElmer, Inc.](www.perkinelmer.com) For support, go to https://www.cambridgesoft.com/contact/support/
