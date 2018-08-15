@@ -16,6 +16,6 @@ A ChemDraw add-in that uses ChemDraw JavaScript API to add and get data in the a
 
 ## Selection Monitor
 
-A ChemDraw add-in that uses the API to get the preview image of the selected structures in the active document.
+A ChemDraw add-in that uses the selection API to get the preview image of the selected structures in the active document.
 
 ![Selection Monitor](./Images/selection-monitor.png)

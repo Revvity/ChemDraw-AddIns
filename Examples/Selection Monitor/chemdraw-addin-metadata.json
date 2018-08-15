@@ -1,8 +1,8 @@
 {
-    "description": "This is an example of ChemDraw add-in that demostrates the usage of the selection API.",
+    "description": "This is an example ChemDraw add-in that demonstrates the usage of the selection API.",
     "isModalDialog": false,
     "menuItemText": "Selection Monitor",
-    "minimumAPIVersion": "1.0",
+    "minimumAPIVersion": "1.1",
     "url": "main.html",
     "version": "1.0"
 }

@@ -1,5 +1,5 @@
 //
-// delection-monitor.js
+// selection-monitor.js
 //
 // This is an example of using ChemDraw Add-in API to get the selection in a document.
 //
