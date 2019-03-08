@@ -1,0 +1,8 @@
+{
+    "name": "Open URL API Tester",
+    "description": "Test add-in for openURLInDefaultBrowser API",
+    "version": "1.0",
+    "menuItemText": "Open URL API Tester",
+    "minimumAPIVersion": "1.2",
+    "url": "main.html"
+}
