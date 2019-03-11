@@ -19,3 +19,9 @@ A ChemDraw add-in that uses ChemDraw JavaScript API to add and get data in the a
 A ChemDraw add-in that uses the selection API to get the preview image of the selected structures in the active document.
 
 ![Selection Monitor](./Images/selection-monitor.png)
+
+## Open URL
+
+A ChemDraw add-in that uses the openURLInDefaultBrowser API to open a given URL in system's default browser.
+
+![Open URL](./Images/open-url.png)
