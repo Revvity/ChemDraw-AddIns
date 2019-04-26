@@ -12,7 +12,10 @@ interface IAppState {
 }
 
 class App extends React.Component<any, IAppState> {
+
   public state: IAppState = { accessToken: "" };
+
+  private appKey: string = "";
 
   public render() {
     if (this.state.accessToken.length > 0) {
@@ -22,6 +25,7 @@ class App extends React.Component<any, IAppState> {
         <div className="container-fluid text-center mt-5">
           <div className="row m-5">
             <div className="col">
+              <p>Connect to Dropbox to see account information and files</p>
               <img
                 src={dropboxImage}
                 alt="Dropbox"
@@ -31,20 +35,34 @@ class App extends React.Component<any, IAppState> {
               />
             </div>
           </div>
+          <div className="row m-4 justify-content-center">
+            <div className="col-8">
+              <div className="form-group">
+                <label htmlFor="appKey">Dropbox app-key</label>
+                <input onChange={ this.appKeyValueChanged } type="text" className="form-control" id="appKey" aria-describedby="appKeyHelp" placeholder="Enter your Dropbox app-key"/>
+                <small className="form-text text-muted">The app-key for your application can be found in Dropbox's App Console</small>
+              </div>
+            </div>
+          </div>
           <div className="row m-5">
             <div className="col">
-              <p>Connect to Dropbox to see account information and files</p>
               <Button color="primary" onClick={this.connectToDropbox}>
                 Connect to Dropbox
               </Button>
             </div>
-          </div>
+          </div>          
         </div>
       );
     }
   }
 
   private connectToDropbox = () => {
+    
+    if (this.appKey.length === 0) {
+      alert("Dropbox app-key must be provided");
+      return;
+    }
+
     // Register a callback function with ChemDraw
     const callbackKey = ChemDrawAPI.registerURLTriggeredCallback(
       this.onCallback
@@ -52,7 +70,7 @@ class App extends React.Component<any, IAppState> {
 
     // Construct a URL for authorization containing the callback key
     const dropboxOAuthUrl =
-      `https://www.dropbox.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=token&redirect_uri=com.perkinelmer.chemdraw.addin:///&state=${callbackKey}`;
+      `https://www.dropbox.com/oauth2/authorize?client_id=${this.appKey}&response_type=token&redirect_uri=com.perkinelmer.chemdraw.addin:///&state=${callbackKey}`;
 
     // Open the URL in external browser to authorize
     ChemDrawAPI.openURLInDefaultBrowser(dropboxOAuthUrl);
@@ -78,6 +96,10 @@ class App extends React.Component<any, IAppState> {
       accessToken: resultMap.get("access_token")
     });
   };
+
+  private appKeyValueChanged = (e: React.FormEvent<HTMLInputElement>) => {
+    this.appKey = e.currentTarget.value;
+  }
 }
 
 export default App;
