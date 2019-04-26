@@ -1,5 +1,5 @@
-# ChemDrawBox
-A ChemDraw add-in that connect to Dropbox by using the `registerURLTriggeredCallback` and `openURLInDefaultBrowser` APIs.
+# ChemDrawOAuthExample
+This is an example add-in that shows how to authorize an application using OAuth. It uses Dropbox as the identity provider. The add-in demonstrates the use of `registerURLTriggeredCallback` and `openURLInDefaultBrowser` APIs to execute the authorization workflow.
 
 This add-in is written in TypeScript and uses React. It also uses Bootstrap and Reactstrap libraries.
 

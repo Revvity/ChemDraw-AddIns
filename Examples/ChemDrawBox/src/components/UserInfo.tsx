@@ -20,9 +20,9 @@ export default class UserInfo extends React.Component<IUserInfoProps, IUserInfoS
   private dropboxAPI: DropboxAPI;
 
   constructor(props: IUserInfoProps) {
-      super(props);
+    super(props);
 
-      this.dropboxAPI = new DropboxAPI(this.props.accessToken);
+    this.dropboxAPI = new DropboxAPI(this.props.accessToken);
   }
 
   public componentDidMount() {
@@ -42,61 +42,61 @@ export default class UserInfo extends React.Component<IUserInfoProps, IUserInfoS
   }
 
   public render() {
-      if (this.state.userInfoJSON === null) {
-        return (<div className="text-center m-1">Loading user information...</div>);
-      }
+    if (this.state.userInfoJSON === null) {
+      return (<div className="text-center m-1">Loading user information...</div>);
+    }
 
-      // Add a button for each file
-      const fileArray: any[] = [];
-      this.state.fileInfoJSON.entries.forEach((i: any) => {
-          fileArray.push(<Button className="m-1" size="sm" color="primary" onClick={ this.onFileClick(i.path_lower) }>{i.name}</Button>);
-      });
-      
-      return (
-        <div className="container-fluid text-center m-1">
-          <div className="row">
-            <div className="col">
-              <h4>User Information</h4>
-            </div>
+    // Add a button for each file
+    const fileArray: any[] = [];
+    this.state.fileInfoJSON.entries.forEach((i: any) => {
+      fileArray.push(<Button className="m-1" size="sm" color="primary" onClick={this.onFileClick(i.path_lower)}>{i.name}</Button>);
+    });
+
+    return (
+      <div className="container-fluid text-center m-1">
+        <div className="row">
+          <div className="col">
+            <h4>User Information</h4>
           </div>
-          <div className="row m-2">
-            <div className="col">
-              <img src={this.state.userInfoJSON.profile_photo_url} alt="Profile photo" className="img-thumbnail" height="150px" width="150px"/>
-            </div>
+        </div>
+        <div className="row m-2">
+          <div className="col">
+            <img src={this.state.userInfoJSON.profile_photo_url} alt="Profile photo" className="img-thumbnail" height="150px" width="150px" />
           </div>
-          <div className="row m-2">
-            <div className="col">
-              {this.state.userInfoJSON.name.display_name}
-            </div>
+        </div>
+        <div className="row m-2">
+          <div className="col">
+            {this.state.userInfoJSON.name.display_name}
           </div>
-          <div className="row m-1">
-            <div className="col">
-              {this.state.userInfoJSON.email}
-            </div>
+        </div>
+        <div className="row m-1">
+          <div className="col">
+            {this.state.userInfoJSON.email}
           </div>
-          <div className="row mt-5">
-            <div className="col">
-              <h6>Files</h6><hr/>
-            </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col">
+            <h6>Files</h6><hr />
           </div>
-          <div className="row">
-            <div className="col">
-              <div className="d-flex flex-wrap">
-                  {fileArray}
-              </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <div className="d-flex flex-wrap">
+              {fileArray}
             </div>
           </div>
         </div>
-      );
-    }
+      </div>
+    );
+  }
 
-    /**
-     * Called when one of the file button is clicked
-     */
-    private onFileClick = (filePath: string) => (e: React.MouseEvent<HTMLButtonElement>) => {
-      // Download file from Dropbox and add to ChemDraw
-      this.dropboxAPI.downloadFile(filePath).then((result) => {
-        ChemDrawAPI.activeDocument.addCDXML(result);
-      });
-    }
+  /**
+   * Called when one of the file button is clicked
+   */
+  private onFileClick = (filePath: string) => (e: React.MouseEvent<HTMLButtonElement>) => {
+    // Download file from Dropbox and add to ChemDraw
+    this.dropboxAPI.downloadFile(filePath).then((result) => {
+      ChemDrawAPI.activeDocument.addCDXML(result);
+    });
+  }
 }
