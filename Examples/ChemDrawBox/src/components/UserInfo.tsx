@@ -42,7 +42,7 @@ export default class UserInfo extends React.Component<IUserInfoProps, IUserInfoS
   }
 
   public render() {
-    if (this.state.userInfoJSON === null) {
+    if ((this.state.userInfoJSON === null) || (this.state.fileInfoJSON === null)) {
       return (<div className="text-center m-1">Loading user information...</div>);
     }
 
