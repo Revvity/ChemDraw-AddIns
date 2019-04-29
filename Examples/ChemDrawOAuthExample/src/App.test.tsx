@@ -1,3 +1,9 @@
+//
+// App.test.tsx
+//
+// Copyright © 2019 PerkinElmer, Inc. All rights reserved.
+//
+
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import App from "./components/App";

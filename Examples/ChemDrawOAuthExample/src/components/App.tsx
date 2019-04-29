@@ -1,3 +1,9 @@
+//
+// App.tsx
+//
+// Copyright © 2019 PerkinElmer, Inc. All rights reserved.
+//
+
 import * as React from "react";
 import { Button } from "reactstrap";
 import UserInfo from "./UserInfo";

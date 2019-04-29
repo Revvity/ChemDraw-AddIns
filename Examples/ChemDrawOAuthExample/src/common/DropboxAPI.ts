@@ -1,3 +1,9 @@
+//
+// DropboxAPI.ts
+//
+// Copyright © 2019 PerkinElmer, Inc. All rights reserved.
+//
+
 export default class DropboxAPI {
   private accessToken: string;
   private accessTokenErrorMessage: string = "Access token is invalid";

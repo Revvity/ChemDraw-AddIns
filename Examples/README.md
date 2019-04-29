@@ -25,3 +25,9 @@ A ChemDraw add-in that uses the selection API to get the preview image of the se
 A ChemDraw add-in that uses the openURLInDefaultBrowser API to open a given URL in system's default browser.
 
 ![Open URL](./Images/open-url.png)
+
+## ChemDraw OAuth Example
+
+An example add-in that shows how to authorize an application using OAuth. It uses Dropbox as the identity provider.
+
+![ChemDraw OAuth Example](./Images/oauth-example.png)
