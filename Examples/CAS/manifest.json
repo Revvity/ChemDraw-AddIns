@@ -1,0 +1,6 @@
+{
+   "sourceName": "CAS Add-ins",
+   "addins": [
+       "https://scifinder-n.cas.org/chemdraw-addin/chemdraw-addin-metadata.json"
+   ]
+}
