@@ -1,7 +1,7 @@
 //
 // DropboxAPI.ts
 //
-// Copyright © 2019 PerkinElmer, Inc. All rights reserved.
+// Copyright © 2019-2021 PerkinElmer, Inc. All rights reserved.
 //
 
 export default class DropboxAPI {

@@ -6,7 +6,7 @@
 // The supported data formats are CDXML, CDX encoded as Base64, SMILES, InChI, InChIKey,
 // MolV2000, MolV3000, RXNV2000, RXNV3000, and PNG encoded as Base64.
 //
-// Copyright (c) 2017 PerkinElmer, Inc. All rights reserved.
+// Copyright (c) 2017-2021 PerkinElmer, Inc. All rights reserved.
 
 // ESLint configuration
 /* global ChemDrawAPI, $ */
