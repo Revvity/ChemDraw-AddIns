@@ -1,7 +1,7 @@
 //
 // App.test.tsx
 //
-// Copyright © 2019 PerkinElmer, Inc. All rights reserved.
+// Copyright © 2019-2021 PerkinElmer, Inc. All rights reserved.
 //
 
 import * as React from "react";
