@@ -1,0 +1,12 @@
+#########################################################################################################
+# Visual Studio
+#########################################################################################################
+ 
+# Flare
+**/docs/**/~*.docx
+**/docs/**/Analyzer
+**/docs/**/Output
+**/docs/**/Project/Users
+**/Documentation/**/Analyzer
+**/Documentation/**/Output
+**/Documentation/**/Project/Users

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="true"
+  ProjectName="ChemDrawAPI"
+  ProjectFolder="D:\ChemDraw-AddIns\Documentation"
+  AutoSync="false"
+  SourceFolders=""
+  ImportResources="false"
+  ImportResourcesLocation="NoImport"
+  ImportTopics="content"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2017-12-13T12:37:12.3868319+05:30"
+  ImportTopicsLocation="Content/">
+  <Files>
+    <Url
+      Source="file:///C:/Users/User/Documents/ChemDrawAPI.html"
+      AbsoluteSource="file:///C:/Users/User/Documents/ChemDrawAPI.html" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/ChemDrawAPI.html"
+      TimeStamp="13-12-2017 12:37:08 PM" />
+    <Url
+      Source="../TOCs/ChemDrawAPI.fltoc"
+      TimeStamp="13-12-2017 12:37:12 PM" />
+  </GeneratedFiles>
+</HtmlImport>

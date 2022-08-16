@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <H1 class="WhatsNew">Global Objects</H1>
+        <H2 id="chemdrawapi" xmlns="http://www.w3.org/1999/xhtml" class="Heading2"><a name="ChemDrawAPI" xmlns=""></a>ChemDrawAPI</H2>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">The singleton global object to access the active document, the add-in container window, etc.</DIV>
+        <H3 id="activedocument-document" xmlns="http://www.w3.org/1999/xhtml" class="Heading3"><a name="activeDocument_:_Document" xmlns=""></a>activeDocument : Document</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the active document that is currently open in ChemDraw. </DIV>
+        <h5 xmlns="http://www.w3.org/1999/xhtml" class="Heading5">Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p xmlns=""><span style="font-family: 'Courier New';">try {
+    var activeDocument = ChemDrawAPI.activeDocument;
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+        <H3 id="window-window" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">window : Window</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the add-in container window that contains the add-in that is currently running.</DIV>
+        <h5 id="example" xmlns="http://www.w3.org/1999/xhtml" class="Heading5">Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p xmlns=""><span style="font-family: 'Courier New';">try {
+    var addinContainerWindow = ChemDrawAPI.window;
+}
+catch (err) {
+    alert(err.message);
+}
+</span></p></pre>
+        <H3 id="version-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">version : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the version of the ChemDraw JavaScript API.</DIV>
+        <h5 id="example-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading5">Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p xmlns=""><span style="font-family: 'Courier New';">try {
+    document.write(ChemDrawAPI.version);
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; "><em xmlns="http://www.w3.org/1999/xhtml">The add-in example <strong xmlns="http://www.w3.org/1999/xhtml">Hello World</strong> demonstrates the usage of <strong xmlns="http://www.w3.org/1999/xhtml">ChemDrawAPI.version</strong>. To access it, go to <a href="https://github.com/PerkinElmer/ChemDraw-AddIns/tree/master/Examples" xmlns="http://www.w3.org/1999/xhtml">ChemDraw Add-in Examples</a></em>.</DIV>
+        <H3 class="Heading3">openURLInDefaultBrowser(url) : void</H3>
+        <DIV class="Body">Opens the specified URL in system's default browser. Only web URLs are supported i.e. The URL must start with an "http" or "https" otherwise an exception will be thrown.</DIV>
+        <h5 class="Heading5">Parameters</h5>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">url</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" xmlns=""><span style="font-family: Arial;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string"><span style="font-family: Arial;">string</span></a></span>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The URL to open in system's default browser</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 class="Heading5">Returns</h5>
+        <DIV class="Body">None</DIV>
+        <h5 class="Heading5">Throws Exceptions</h5>
+        <DIV class="Body">Yes</DIV>
+        <h5 id="example-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading5">Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p xmlns=""><span style="font-family: 'Courier New';">try {
+    <span style="font-size: 10pt;">ChemDrawAPI.openURLInDefaultBrowser(
+         "http://www.perkinelmer.com/category/chemdraw");</span>
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+        <DIV class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">The add-in example <b>Open URL</b> demonstrates the usage of <b>ChemDrawAPI.openURLInDefaultBrowser</b>. To access it, go to <a href="https://github.com/PerkinElmer/ChemDraw-AddIns/tree/master/Examples">ChemDraw Add-in Examples</a>.</DIV>
+        <H3 class="Heading3">registerURLTriggeredCallback(callbackFunction) : string</H3>
+        <DIV class="Body">Registers a callback function with ChemDraw that will be called when ChemDraw is invoked by the URL handler. This API takes a callback function and returns a callback key that uniquely identifies this callback.</DIV>
+        <h5 class="Heading5">Parameters</h5>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">callbackFunction</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" xmlns=""><span style="font-family: Arial;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a></span>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns=""><span style="font-family: Verdana;">The callback function that will be invoked</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 class="Heading5">Returns</h5>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">A callback key that uniquely identifies this callback</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 class="Heading5">Throws Exceptions</h5>
+        <DIV class="Body">Yes</DIV>
+        <h5 id="example-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading5">Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p xmlns=""><span style="font-family: 'Courier New';">try {
+    <span style="font-size: 10pt;">const callbackKey = ChemDrawAPI.registerURLTriggeredCallback((arg) =&gt; {
+         alert(arg);
+     });</span>
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+        <DIV class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">The add-in example <b>ChemDrawOAuthExample</b> demonstrates the usage of <b>ChemDrawAPI.registerURLTriggeredCallback</b>. To access it, go to <a href="https://github.com/PerkinElmer/ChemDraw-AddIns/tree/master/Examples">ChemDraw Add-in Examples</a>. More information on the usage of this API can be found in the ChemDraw User Guide.</DIV>
+        <H3 class="Heading3">copyToClipboard(text) : void</H3>
+        <DIV class="Body">Copies the specified text to the clipboard.</DIV>
+        <h5 class="Heading5">Parameters</h5>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">text</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" xmlns=""><span style="font-family: Arial;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string"><span style="font-family: Arial;">string</span></a></span>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The text to be copied</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 class="Heading5">Returns</h5>
+        <DIV class="Body">None</DIV>
+        <h5 class="Heading5">Throws Exceptions</h5>
+        <DIV class="Body">Yes</DIV>
+        <h5 id="example-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading5">Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p xmlns=""><span style="font-family: 'Courier New';">try {
+    <span style="font-size: 10pt;">ChemDrawAPI.copyToClipboard("Hello World");</span>
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+    </body>
+</html>

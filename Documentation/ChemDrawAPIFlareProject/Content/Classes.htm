@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="8727" MadCap:lastWidth="640">
+    <head>
+    </head>
+    <body>
+        <H1 id="classes" xmlns="http://www.w3.org/1999/xhtml" class="WhatsNew">Classes</H1>
+        <H2 id="document" xmlns="http://www.w3.org/1999/xhtml" class="Heading2">Document</H2>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Provides an API to add and get data in a ChemDraw document.</DIV>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; "><em xmlns="http://www.w3.org/1999/xhtml">The add-in example <strong>Document Data Importer and Exporter</strong> demonstrates the usage of the API for adding and getting data in the active document. To access it, go to <a href="https://github.com/PerkinElmer/ChemDraw-AddIns/tree/master/Examples">ChemDraw Add-in Examples</a>.</em>
+        </DIV>
+        <H3 class="Heading3">selection : Selection</H3>
+        <DIV class="Body">Gets the selection in the document.</DIV>
+        <H4 class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">var selection = ChemDrawAPI.activeDocument.selection;
+if (!selection.isEmpty()) {
+    <span style="color: #a0522d;">// Do something</span>
+}</p></pre>
+        <H3 id="addcdxmlcdxmltext-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addCDXML(cdxmlText) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a CDXML document to the active document. The active document honors the style and coordinates of the supplied CDXML document.</DIV>
+        <H4 id="parameters" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-spacing: 2px 3px;border-top-left-radius: 1px;border-top-right-radius: 1px;border-bottom-right-radius: 1px;border-bottom-left-radius: 1px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 86px;" xmlns="" />
+            <col style="width: 65px;" xmlns="" />
+            <col xmlns="" />
+            <thead>
+                <tr class="header">
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">cdxmlText</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The CDXML document to add to the active document</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-2" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addCDXML(cdxmlText);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getcdxml-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getCDXML() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as CDXML.</DIV>
+        <H4 id="parameters-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 91px;" xmlns="" />
+            <col xmlns="" />
+            <thead>
+                <tr class="header">
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a CDXML string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-1" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-3" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns=""><span style="font-size: 10pt;">try {
+    var cdxmlText = ChemDrawAPI.activeDocument.getCDXML();
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+        <H3 id="addcdxbase64encodedbase64encodedcdxtext-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addCDXBase64Encoded(base64EncodedCDXText) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a CDX document, encoded as <a href="https://en.wikipedia.org/wiki/Base64" xmlns="http://www.w3.org/1999/xhtml">Base64</a>, to the active document. The active document honors the style and coordinates of the supplied CDX document.</DIV>
+        <H4 id="parameters-2" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="170px">
+            </col>
+            <col width="145px">
+            </col>
+            <col width="315px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">base64EncodedCDXText</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The CDX document to add to the active document. The string must be encoded as <a href="https://en.wikipedia.org/wiki/Base64">Base64</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-2" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-2" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-4" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns=""><span style="font-size: 10pt;">try {
+    ChemDrawAPI.activeDocument.addCDXBase64Encoded(base64EncodedCDXText);
+}
+catch (err) {
+    alert(err.message);
+}</span></p></pre>
+        <H3 id="getcdxbase64encoded-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getCDXBase64Encoded() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as <a href="https://en.wikipedia.org/wiki/Base64" xmlns="http://www.w3.org/1999/xhtml">Base64</a> encoded CDX.</DIV>
+        <H4 id="parameters-3" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-3" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 91px;" xmlns="" />
+            <col xmlns="" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="https://en.wikipedia.org/wiki/Base64" xmlns="http://www.w3.org/1999/xhtml">Base64</a> encoded string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-3" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-5" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var base64EncodedCDXText = ChemDrawAPI.activeDocument.getCDXBase64Encoded();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="addsmilessmilestext-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addSMILES(smilesText) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a structure, encoded in a <a href="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html" xmlns="http://www.w3.org/1999/xhtml">SMILES</a> string, to the active document. The document retains its original styling. The structure will be placed at the center of the currently visible view of the document.</DIV>
+        <H4 id="parameters-4" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">smilesText</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html" xmlns="http://www.w3.org/1999/xhtml">SMILES</a> encoded structure to add to the active document</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-4" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-4" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-6" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addSMILES(smilesText);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getsmiles-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getSMILES() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as a <a href="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html" xmlns="http://www.w3.org/1999/xhtml">SMILES</a> string. If there is a mixture of structures and non-structures (e.g. clip-art, text etc), only the structures will be returned. If there are multiple structures, the <a href="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html" xmlns="http://www.w3.org/1999/xhtml">SMILES</a> string will be returned in dot-separated notation.</DIV>
+        <H4 id="parameters-5" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-5" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html" xmlns="http://www.w3.org/1999/xhtml">SMILES</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-5" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-7" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var smilesText = ChemDrawAPI.activeDocument.getSMILES();
+}
+catch (err) {
+    alert(err.message);
+}
+</p></pre>
+        <H3 id="addinchiinchitext-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addInChI(inChIText) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a structure, encoded in an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChI</a> string, to the active document. The document retains its original styling. The structure will be placed at the center of the currently visible view of the document.</DIV>
+        <H4 id="parameters-6" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">inChIText</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChI</a> encoded structure to add to the active document</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-6" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-6" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addInChI(inChIText);
+}
+catch (err) {
+    alert(err.message);
+}
+</p></pre>
+        <H3 id="getinchi-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getInChI() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChI</a> string. If there is a mixture of structures and non-structures (e.g. clip-art, text etc), only the structures will be returned. If there are multiple structures, the <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChI</a> string will return them in its native format.</DIV>
+        <H4 id="parameters-7" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-7" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChI</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-7" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-9" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var inChIText = ChemDrawAPI.activeDocument.getInChI();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getinchikey-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getInChIKey() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChIKey</a> string. If there is a mixture of structures and non-structures (e.g. clip-art, text etc), only the structures will be returned. If there are multiple structures, the <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChIKey</a> string will return them in its native format.</DIV>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; "><em xmlns="http://www.w3.org/1999/xhtml">The InChIKey is a one-way format. A key can be generated from a structure, but a structure cannot be generated from a key. Thus there is no Add method for InChIKey.</em>
+        </DIV>
+        <H4 id="parameters-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChIKey</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-10" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">
+try {
+    var inChIKeyText = ChemDrawAPI.activeDocument.getInChIKey();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="addmolv2000molv2000text-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addMolV2000(molV2000Text) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a structure, encoded in a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> string to the active document. The document retains its original styling. If present, 2D coordinates will be honored for the structure, otherwise the structure will be placed at the center of the currently visible view of the document.</DIV>
+        <H4 id="parameters-9" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">molV2000Text</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> encoded structure to add to the active document</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-9" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-9" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-11" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addMolV2000(molV2000Text);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getmolv2000-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getMolV2000() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> string. If there is a mixture of structures and non-structures (e.g. clip-art, text etc), only the structures will be returned. If there are multiple structures, the <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> string will return them in its native format.</DIV>
+        <H4 id="parameters-10" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-10" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-10" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-12" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var molV2000Text = ChemDrawAPI.activeDocument.getMolV2000();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="addmolv3000molv3000text-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addMolV3000(molV3000Text) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a structure, encoded in a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> string to the active document. The document retains its original styling. If present, 2D coordinates will be honored for the structure, otherwise they will be placed at the center of the currently visible view of the document.</DIV>
+        <H4 id="parameters-11" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">molV3000Text</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> encoded structure to add to the active document</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-11" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-11" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-13" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addMolV3000(molV3000Text);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getmolv3000-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getMolV3000() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> string. If there is a mixture of structures and non-structures (e.g. clip-art, text etc), only the structures will be returned. If there are multiple structures, the <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> string will return them in its native format.</DIV>
+        <H4 id="parameters-12" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-12" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-12" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-14" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var molV3000Text = ChemDrawAPI.activeDocument.getMolV3000();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="addmolmoltext-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addMol(molText) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">This is a convenience method that will automatically detect whether the string is in <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a>  or <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> format, and add the structure to the active document. The document retains its original styling. If present, 2D coordinates will be honored for the structure, otherwise the structure will be placed at the center of the currently visible view of the document. If the supplied string is in neither <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> or <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> format, an exception will be thrown.</DIV>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; "><em xmlns="http://www.w3.org/1999/xhtml">There is no equivalent getMol() method. Call the getMolV2000() or getMolV3000() methods instead.</em>
+        </DIV>
+        <H4 id="parameters-13" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">molText</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV2000</a> or <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">MolV3000</a> encoded structure to add to the active document</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-13" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-13" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-15" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addMol(molText);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="addrxnv2000rxnv2000text-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addRXNV2000(rxnV2000Text) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a reaction, encoded in an <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV2000</a> string, to the active document. The document retains its original styling. If present, 2D coordinates will be honored for the reaction, otherwise the reaction will be placed at the center of the currently visible view of the document.</DIV>
+        <H4 id="parameters-14" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">rxnV2000Text</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV2000</a> encoded structure to add to the active document</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-14" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-14" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-16" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addRXNV2000(rxnV2000Text);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getrxnv2000-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getRXNV2000() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as an <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV2000</a> string. If there is a mixture of reactions and non-reactions (e.g. clip-art, text etc), only the reactions will be returned. If there are multiple reactions, the <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV2000</a> string will return them in its native format.</DIV>
+        <H4 id="parameters-15" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-15" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV2000</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-15" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-17" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var rxnV2000Text =  ChemDrawAPI.activeDocument.getRXNV2000();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="addrxnv3000rxnv3000text-void" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">addRXNV3000(rxnV3000Text) : void</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Adds a reaction, encoded in an <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV3000</a>  string, to the active document. The document retains its original styling. If present, 2D coordinates will be honored for the reaction, otherwise the reaction will be placed at the center of the currently visible view of the document.</DIV>
+        <H4 id="parameters-16" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">rxnV3000Text</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV3000</a> encoded structure to add to the active document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-16" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="throws-exceptions-16" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-18" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    ChemDrawAPI.activeDocument.addRXNV3000(rxnV3000Text);
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getrxnv3000-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getRXNV3000() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV3000</a> string. If there is a mixture of reactions and non-reactions (e.g. clip-art, text etc), only the reactions will be returned. If there are multiple reactions, the <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV3000</a> string will return them in its native format.</DIV>
+        <H4 id="parameters-17" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-17" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="http://accelrys.com/products/collaborative-science/biovia-draw/ctfile-no-fee.html" xmlns="http://www.w3.org/1999/xhtml">RXNV3000</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-17" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-19" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var rxnV3000Text = ChemDrawAPI.activeDocument.getRXNV3000();
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+        <H3 id="getpngbase64encodedoptions-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getPNGBase64Encoded([options]) : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the active document as a PNG image with the specified options. This can be used to generate a PNG image as a preview of the document.</DIV>
+        <H4 id="parameters-18" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="64px">
+            </col>
+            <col width="107px">
+            </col>
+            <col width="424px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">options</td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Image options</td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" xmlns=""><b>Optional</b> Options are for getting the PNG image.</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="returns-18" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 423px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the active document as a <a href="https://en.wikipedia.org/wiki/Base64" xmlns="http://www.w3.org/1999/xhtml">Base64</a> encoded PNG string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="throws-exceptions-18" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Throws Exceptions</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Yes</DIV>
+        <H4 id="example-20" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">try {
+    var pngBase64EncodedText = ChemDrawAPI.activeDocument.getPNGBase64Encoded({
+          transparent: false,
+          scalePercent: 100,
+          borderSizeInPixels: 100
+     });
+}
+catch (err) {
+    alert(err.message);
+}</p></pre>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Title Page"
+    Link="/Content/TitlePage.htm"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="TOC"
+    Link="/Content/TOC.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="ChemDraw JavaScript API Reference Guide"
+    Link="/Content/ChemDrawAPI.html">
+    <TocEntry
+      Title="Global Objects"
+      Link="/Content/Global Objects.htm" />
+    <TocEntry
+      Title="Classes"
+      Link="/Content/Classes.htm">
+      <TocEntry
+        Title="Window"
+        Link="/Content/Window.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Selection.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/JSON Structures.htm" />
+  </TocEntry>
+</CatapultToc>

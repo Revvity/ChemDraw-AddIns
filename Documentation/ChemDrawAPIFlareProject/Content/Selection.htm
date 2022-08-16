@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <H2 class="Heading2">Selection</H2>
+        <DIV class="Body">Provides API to get the selected structures in a ChemDraw document.</DIV>
+        <DIV class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">The add-in example Selection Monitor demonstrates the usage of the API for getting the preview image of the selected structures in the active document. To access it, go to <a href="https://github.com/PerkinElmer/ChemDraw-AddIns/tree/master/Examples" target="_blank">ChemDraw Add-in Examples</a>.</DIV>
+        <H3 class="Heading3">containsPartialStructure() : boolean</H3>
+        <DIV class="Body">Determines whether the selection contains partially selected structure.</DIV>
+        <H4 class="Heading4">Parameters</H4>
+        <DIV class="Body">None</DIV>
+        <H4 class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="107px">
+            </col>
+            <col width="424px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" xmlns="">boolean</a>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">true if part of a single structure or grouped structures is selected, false otherwise</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml" xml:space="preserve"><p style="font-family: 'Courier New';" xmlns="">
+if ChemDrawAPI.activeDocument.selection.containsPartialStructure()){
+    <span style="color: #a0522d;">// Do something</span>
+}</p></pre>
+        <H3 class="Heading3">getCDXML() : string</H3>
+        <DIV class="Body">Gets the contents of the selection as a CDXML document.</DIV>
+        <H4 class="Heading4">Parameters</H4>
+        <DIV class="Body">None</DIV>
+        <H4 class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="107px">
+            </col>
+            <col width="424px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" xmlns="">string</a>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the selection as a CDXML document</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml" xml:space="preserve"><p style="font-family: 'Courier New';" xmlns="">
+var cdxmlText = ChemDrawAPI.activeDocument.selection.getCDXML();
+
+<span style="color: #a0522d;">// Do something with the CDXML text here</span></p></pre>
+        <H3 class="Heading3">getSVG([options]) : string</H3>
+        <DIV class="Body">Gets the contents of the selection as an SVG image with the specified options. This can be used to generate an SVG image as a preview of the selection.</DIV>
+        <H4 class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="64px">
+            </col>
+            <col width="107px">
+            </col>
+            <col width="424px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">options</td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Image options</td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" xmlns=""><b>Optional</b> Options for getting the SVG image</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="107px">
+            </col>
+            <col width="424px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" xmlns="">string</a>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the selection as an SVG image</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml" xml:space="preserve"><p style="font-family: 'Courier New';" xmlns="">
+var svg = ChemDrawAPI.activeDocument.selection.getSVG({
+    transparent: false,
+    scalePercent: 100,
+    borderSizeInPixels: 20
+});
+
+<span style="color: #a0522d;">// Do something with the svg image here</span></p></pre>
+        <H3 id="getinchikey-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getInChIKey() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the selection as an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChIKey</a> string. </DIV>
+        <H4 id="parameters-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="" />
+            <col xmlns="" style="width: 397px;" />
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the selection as an <a href="https://iupac.org/who-we-are/divisions/division-details/inchi/" xmlns="http://www.w3.org/1999/xhtml">InChIKey</a> string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="example-10" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">
+var inChIKey = ChemDrawAPI.activeDocument.selection.getInChIKey();</p><p style="font-family: 'Courier New';" xmlns=""><span style="color: #a0522d;">// Do something with the inChIKey here</span></p></pre>
+        <H3 id="getinchikey-string" xmlns="http://www.w3.org/1999/xhtml" class="Heading3">getSMILES() : string</H3>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">Gets the contents of the selection as a <a href="https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html" target="_blank" xmlns="">SMILES</a> string. </DIV>
+        <H4 id="parameters-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Parameters</H4>
+        <DIV xmlns="http://www.w3.org/1999/xhtml" class="Body">None</DIV>
+        <H4 id="returns-8" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col style="width: 113px;" xmlns="">
+            </col>
+            <col xmlns="" style="width: 397px;">
+            </col>
+            <thead>
+                <tr>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">The contents of the selection as a SMILES string</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 id="example-10" xmlns="http://www.w3.org/1999/xhtml" class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p style="font-family: 'Courier New';" xmlns="">
+var smilesText = ChemDrawAPI.activeDocument.selection.getSMILES();</p><p style="font-family: 'Courier New';" xmlns=""><span style="color: #a0522d;">// Do something with the SMILES here</span></p></pre>
+        <H3 class="Heading3">isEmpty() : boolean</H3>
+        <DIV class="Body">Determines whether any object has been selected in the document.</DIV>
+        <H4 class="Heading4">Parameters</H4>
+        <DIV class="Body">None</DIV>
+        <H4 class="Heading4">Returns</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="107px">
+            </col>
+            <col width="424px">
+            </col>
+            <thead>
+                <tr class="header">
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Return Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" xmlns="">boolean</a>
+                    </td>
+                    <td style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">true if nothing has been selected, false otherwise</td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml" xml:space="preserve"><p style="font-family: 'Courier New';" xmlns="">if (!ChemDrawAPI.activeDocument.selection.isEmpty()){
+   <span style="color: #a0522d;">// Do something</span>
+}</p></pre>
+        <H3 class="Heading3">onChange(callback) : void</H3>
+        <DIV class="Body">Registers a callback function which will be called when the selection is changed in the document.</DIV>
+        <H4 class="Heading4">Parameters</H4>
+        <table xmlns="http://www.w3.org/1999/xhtml" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col width="132px">
+            </col>
+            <col width="79px">
+            </col>
+            <col width="359px">
+            </col>
+            <thead>
+                <tr>
+                    <th align="left" style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Name</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Type</th>
+                    <th style="background-color: #00bfff;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">callback</td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" xmlns="">function</a>
+                    </td>
+                    <td style="background-color: #f5f5f5;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;">
+                        <p xmlns="">The callback function which will called when the selection is changed</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <H4 class="Heading4">Returns</H4>
+        <DIV class="Body">None</DIV>
+        <H4 class="Heading4">Example</H4><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml" xml:space="preserve"><p style="font-family: 'Courier New';" xmlns=""><span style="color: #a0522d;">// Set the callback (or handler) for the selection change event</span>
+ChemDrawAPI.activeDocument.selection.onChange(function () {
+    if (!ChemDrawAPI.activeDocument.selection.isEmpty()) {
+        cdxmlText = ChemDrawAPI.activeDocument.selection.getCDXML();
+        svg = ChemDrawAPI.activeDocument.selection.getSVG();
+
+        <span style="color: #a0522d;">// Do something with the cdxmlText and the svg image here</span>
+    }
+});
+</p></pre>
+        <DIV class="Body">&#160;</DIV>
+    </body>
+</html>

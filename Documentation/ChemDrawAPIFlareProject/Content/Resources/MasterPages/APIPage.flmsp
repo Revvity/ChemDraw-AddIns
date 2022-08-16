@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="123" MadCap:lastWidth="884">
+    <head>
+        <script type="text/javascript" src="../Prettify/prettify.js">
+	</script>
+    </head>
+    <body>
+        <MadCap:bodyProxy />
+        <MadCap:snippetBlock src="../Snippets/Footer.flsnp" />
+        <p>
+            <img src="../Prettify/onLoad.png" onload="prettyPrint()" />
+        </p>
+    </body>
+</html>

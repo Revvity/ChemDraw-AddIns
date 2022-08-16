@@ -1,0 +1,1293 @@
+/*<meta />*/
+
+@import url('../Prettify/prettify.css');
+
+/*----------Heading lists----------*/
+/*---------------Character styles----------------------*/
+/*----------Primary Numbered lists----------*/
+/*----------Secondary Numbered lists----------*/
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/* Hor and Vert position of the icon */
+/*distance between icon and 'Note:' */
+/*distance from left margin to icon */
+/*---------------Character styles----------------------*/
+/* controls font-size of footnote number in text */
+/* Controls color of footnote number in the text */
+/* controls format of popup body */
+
+html
+{
+	max-width: 750px;
+}
+
+Body
+{
+	text-align: left;
+	margin-left: 0.2in;
+	margin-right: 0in;
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0em;
+	color: #000000;
+	text-indent: 0px;
+	text-decoration: none;
+	font-size: 10pt;
+	font-family: Verdana, Arial, Tahoma, sans-serif;
+	line-height: 13.00pt;
+	max-width: 750px;
+}
+
+P
+{
+	line-height: 15pt;
+	font-size: 10pt;
+	font-family: Arial;
+}
+
+DIV.Body
+{
+	line-height: 1.60em;
+}
+
+DIV.BodyInd
+{
+	margin-left: 2em;
+	line-height: 1.3em;
+}
+
+H1.Heading1
+{
+	margin-top: 0pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 24pt;
+	line-height: 24pt;
+	color: #0000ff;
+}
+
+H2.Heading2
+{
+	margin-top: 10pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14pt;
+	line-height: 19pt;
+	color: #0000FF;
+}
+
+H3.Heading3
+{
+	margin-top: 8pt;
+	font-family: Arial;
+	font-size: 12pt;
+	line-height: 17pt;
+	color: #0000FF;
+	margin-bottom: 3px;
+}
+
+H4.Heading4
+{
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10.5pt;
+	line-height: 12pt;
+	color: #0000ff;
+}
+
+h5.Heading5
+{
+	margin-top: 5pt;
+	margin-bottom: 0pt;
+	color: #0000ff;
+	line-height: 12.5pt;
+	font-family: Arial;
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+DIV.HeadingRunIn
+{
+	float: left;
+	line-height: 1.40em;
+	mc-auto-number-position: inside-tail;
+	mc-auto-number-format: '.  ';
+	font-size: 10pt;
+	vertical-align: text-bottom;
+	font-weight: bold;
+}
+
+DIV.numlist1-1st
+{
+	mc-auto-number-format: 'F:{n=1}. ';
+	mc-auto-number-position: outside-head;
+	margin-left: 0em;
+	margin-right: 0em;
+	mc-auto-number-offset: 0.25em;
+	margin-bottom: 5pt;
+	margin-top: 5pt;
+}
+
+DIV.numlist1-inner
+{
+	mc-auto-number-format: 'F:{n+}. ';
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 0.25em;
+	margin-bottom: 5pt;
+	margin-top: 5pt;
+}
+
+DIV.numlist1-last
+{
+	mc-auto-number-format: 'F:{n+}. ';
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 0.25em;
+	margin-top: 4pt;
+	margin-bottom: 8pt;
+}
+
+DIV.numlist2-1st
+{
+	mc-auto-number-format: 'S:{a=1}. ';
+	margin-left: 0.45em;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 0.20em;
+}
+
+DIV.numlist2-inner
+{
+	mc-auto-number-format: 'S:{a+}. ';
+	margin-left: 0.45em;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 0.20em;
+}
+
+DIV.numlist2-last
+{
+	mc-auto-number-format: 'S:{a+}. ';
+	margin-left: 0.45em;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 0.22em;
+}
+
+DIV.Bullet1-1st
+{
+	background-image: url(../Images/BulletIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0.15em;
+	background-attachment: scroll;
+	padding-left: 1.5em;
+	margin-left: 0em;
+	margin-bottom: 4pt;
+	margin-top: 8pt;
+}
+
+DIV.Bullet1-inner
+{
+	background-image: url(../Images/BulletIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0.15em;
+	background-attachment: scroll;
+	padding-left: 1.5em;
+	margin-left: 0em;
+	margin-bottom: 4pt;
+	margin-top: 4pt;
+}
+
+DIV.Bullet1-last
+{
+	background-image: url(../Images/BulletIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0.15em;
+	background-attachment: scroll;
+	padding-left: 1.5em;
+	margin-left: 0em;
+	margin-bottom: 8pt;
+	margin-top: 4pt;
+}
+
+DIV.Bullet2-1st
+{
+	background-image: url(../Images/BulletIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 0.8 0.12em;
+	background-attachment: scroll;
+	padding-left: 0.8em;
+	margin-left: 1.5em;
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+}
+
+DIV.Bullet2-inner
+{
+	background-image: url(../Images/BulletIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 0.8 0.12em;
+	background-attachment: scroll;
+	padding-left: 0.8em;
+	margin-left: 1.5em;
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+}
+
+DIV.Bullet2-last
+{
+	background-image: url(../Images/BulletIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 0.8 0.12em;
+	background-attachment: scroll;
+	padding-left: 0.8em;
+	margin-left: 1.5em;
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+}
+
+SPAN.Code
+{
+	font-family: "Courier New";
+	color: #333377;
+	line-height: 12pt;
+}
+
+SPAN.Action_Object
+{
+	font-family: Arial;
+	font-weight: bold;
+	line-height: 12pt;
+}
+
+DIV.Footnote
+{
+	margin-left: 0.41667in;
+	margin-right: 0.25in;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: "Times New Roman";
+	font-size: 9pt;
+	text-indent: -16px;
+	line-height: 11pt;
+}
+
+DIV.Caution
+{
+	background-image: url(../Images/caution.png);
+	background-repeat: no-repeat;
+	background-position: 0 0em;
+	background-attachment: scroll;
+	padding-left: 1.5em;
+	margin-left: 0em;
+	font-style: italic;
+	mc-auto-number-format: '{b}Caution: {/b} ';
+	margin-bottom: 1.00em;
+	margin-top: 1.00em;
+	line-height: 1.30em;
+}
+
+DIV.Note
+{
+	background-image: url(../Images/NoteIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0.3em;
+	background-attachment: scroll;
+	padding-left: 1.5em;
+	margin-left: 0em;
+	font-style: italic;
+	margin-bottom: 1.00em;
+	margin-top: 1.00em;
+	line-height: 1.30em;
+	mc-auto-number-format: '{b}Note: {/b} ';
+}
+
+DIV.NoteInd
+{
+	background-image: url(../Images/NoteIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0.8 0.4em;
+	background-attachment: scroll;
+	padding-left: 1.7em;
+	margin-left: 2.1em;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	font-style: italic;
+	font-size: 9pt;
+	mc-auto-number-format: '{b}Note: {/b} ';
+}
+
+Div.Tip
+{
+	background-image: url(../Images/TipIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0.2em;
+	background-attachment: scroll;
+	padding-left: 1.5em;
+	margin-left: 0em;
+	margin-top: 12pt;
+	margin-bottom: 12pt;
+	font-style: italic;
+	line-height: 13pt;
+	mc-auto-number-format: '{b}Tip: {/b} ';
+}
+
+Div.Title
+{
+	
+}
+
+Div.UserGuide
+{
+	
+}
+
+P.GraphicAnchor
+{
+	line-height: 2px;
+}
+
+p.ManualTitle1
+{
+	font-family: 'Century Gothic';
+	font-size: 9pt;
+	margin-bottom: 0;
+	margin-top: 2.00in;
+	text-align: center;
+}
+
+p.ManualTitle2
+{
+	font-family: 'Century Gothic';
+	font-size: 22pt;
+	line-height: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	color: #0055a6;
+}
+
+p.ManualVersionNumber
+{
+	font-family: 'Century Gothic';
+	font-size: 12pt;
+	margin-top: 12pt;
+	text-align: center;
+	color: #646464;
+}
+
+MadCap|miniTocProxy
+{
+	mc-toc-depth: 1;
+	color: #0000ff;
+	line-height: 13pt;
+	font-size: 9pt;
+	border-top: none;
+}
+
+MadCap|xref:link
+{
+	mc-format: '{color #0000ff;{paratext}{/color}';
+	text-decoration: none;
+	font-size: 9pt;
+}
+
+MadCap|xref:visited
+{
+	color: #0000ff;
+	font-size: 9pt;
+}
+
+MadCap|xref:hover
+{
+	color: #ff0000;
+}
+
+P.TableHead
+{
+	font-family: Arial;
+	font-weight: bold;
+	line-height: 12pt;
+}
+
+p.Caption
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.XColTbleCaption1
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.Caption1
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.XColCaption
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.TbleCaption1
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.TbleCaption
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.XColTbleCaption
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+p.XColCaption1
+{
+	font-style: italic;
+	margin-bottom: 10pt;
+}
+
+H2.XColHeading2
+{
+	margin-top: 10pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 19pt;
+	color: #0000FF;
+}
+
+H3.XColHeading3
+{
+	margin-top: 8pt;
+	margin-bottom: 0pt;
+	font-family: Arial;
+	font-size: 12pt;
+	line-height: 17pt;
+	color: #0000FF;
+}
+
+DIV.XColBody
+{
+	line-height: 1.60em;
+}
+
+MadCap|breadcrumbsProxy
+{
+	font-weight: bold;
+	color: #646464;
+	font-size: 9pt;
+}
+
+sub
+{
+	line-height: 0em;
+}
+
+sup
+{
+	line-height: 0em;
+}
+
+MadCap|footnote
+{
+	color: #000000;
+	line-height: 0em;
+	font-size: 0.75em;
+}
+
+sub.subscript
+{
+	font-size: 1.0em;
+}
+
+sup.superscript
+{
+	font-size: 1.0em;
+}
+
+MadCap|pageFooter
+{
+	
+}
+
+span.MCTextPopup
+{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+span.MCTextPopupBody
+{
+	line-height: 1.0em;
+}
+
+img
+{
+	
+}
+
+table.TableWidthToContent
+{
+	caption-side: top;
+	width: auto;
+	table-layout: auto;
+	mc-table-style: url('../TableStyles/_2col_table.css');
+}
+
+table
+{
+	max-width: 750px;
+}
+
+@media print
+{
+	DIV.numlist1-1st
+	{
+		mc-auto-number-format: 'F:{n=1}. ';
+		mc-auto-number-position: outside-head;
+		margin-left: 1.85em;
+		margin-right: 0em;
+		mc-auto-number-offset: 1.85em;
+		color: #000000;
+		margin-bottom: 4pt;
+		margin-top: 8pt;
+	}
+
+	DIV.numlist1-inner
+	{
+		mc-auto-number-format: 'F:{n+}. ';
+		mc-auto-number-position: outside-head;
+		margin-left: 1.85em;
+		margin-right: 0em;
+		mc-auto-number-offset: 1.85em;
+		color: #000000;
+		margin-bottom: 5pt;
+		margin-top: 5pt;
+	}
+
+	DIV.numlist1-last
+	{
+		mc-auto-number-format: 'F:{n+}. ';
+		mc-auto-number-position: outside-head;
+		margin-left: 1.85em;
+		margin-right: 0em;
+		mc-auto-number-offset: 1.85em;
+		color: #000000;
+		margin-top: 4pt;
+		margin-bottom: 8pt;
+	}
+
+	DIV.numlist2-1st
+	{
+		mc-auto-number-format: 'S:{a=1}. ';
+		margin-left: 3.7em;
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 1.85em;
+	}
+
+	DIV.numlist2-inner
+	{
+		mc-auto-number-format: 'S:{a+}. ';
+		mc-auto-number-position: outside-head;
+		margin-left: 3.7em;
+		mc-auto-number-offset: 1.85em;
+	}
+
+	DIV.numlist2-last
+	{
+		mc-auto-number-format: 'S:{a+}. ';
+		margin-left: 3.7em;
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 1.85em;
+	}
+
+	MadCap|xref
+	{
+		mc-format: '{quote}{paratext}{quote} on page {page}';
+		color: #0000ff;
+	}
+
+	img
+	{
+		max-width: 6.0in;
+	}
+
+	MadCap|footnoteBlock
+	{
+		
+	}
+
+	MadCap|footnotesBlock
+	{
+		
+	}
+
+	MadCap|popupBody
+	{
+		
+	}
+
+	DIV.Footnote
+	{
+		color: #000000;
+	}
+
+	table.PrintFooterTableRight
+	{
+		
+	}
+
+	i.emphasis
+	{
+		
+	}
+
+	SPAN.Chem3DFileFormatTableCell
+	{
+		font-family: Arial;
+	}
+
+	Body
+	{
+		margin-left: 0em;
+		margin-right: 0em;
+		font-family: Arial;
+	}
+
+	DIV.Body
+	{
+		vertical-align: baseline;
+		color: #000000;
+		font-size: 10pt;
+		font-family: Arial;
+		line-height: 1.6em;
+	}
+
+	P.Caption
+	{
+		margin-left: 0em;
+		mc-auto-number-format: 'CH:Figure {chapnum}.{n+}: ';
+		page-break-before: avoid;
+	}
+
+	P.Caption1
+	{
+		margin-left: 0em;
+		mc-auto-number-format: 'CH:Figure {chapnum}.{n=1}: ';
+		page-break-before: avoid;
+	}
+
+	P.TbleCaption
+	{
+		margin-left: 0em;
+		mc-auto-number-format: 'CH:Table {chapnum}.{n+}: ';
+		page-break-before: avoid;
+	}
+
+	P.TbleCaption1
+	{
+		margin-left: 0em;
+		mc-auto-number-format: 'CH:Table {chapnum}.{n=1}: ';
+		page-break-before: avoid;
+	}
+
+	MadCap|variable.ChapterNumber
+	{
+		font-family: Verdana, Arial, 'Lucida Sans';
+		font-size: 64pt;
+		color: #ffffff;
+		mc-heading-level: 1;
+	}
+
+	h5.Heading5
+	{
+		color: #0055A6;
+		mc-heading-level: 5;
+	}
+
+	H1.Heading1
+	{
+		mc-auto-number-class: TOCProxy;
+		font-weight: bold;
+		color: #646464;
+		font-size: 16pt;
+		mc-auto-number-format: 'Chapter {chapnum}: ';
+	}
+
+	DIV.HeadingRunIn
+	{
+		page-break-after: avoid;
+		color: #646464;
+		vertical-align: baseline;
+		line-height: 1.6em;
+	}
+
+	H2.Heading2
+	{
+		color: #0055A6;
+		font-size: 12pt;
+	}
+
+	H3.Heading3
+	{
+		font-weight: bold;
+		font-size: 11pt;
+		color: #000000;
+		mc-toc-depth: 0;
+		margin-top: 12pt;
+		mc-auto-number-class: 0;
+		margin-bottom: 8pt;
+		mc-heading-level: 3;
+	}
+
+	DIV.UserGuide
+	{
+		text-align: right;
+		font-style: italic;
+		font-size: 20pt;
+		font-weight: bold;
+		color: #fff;
+		line-height: 1.3em;
+		text-align: right;
+	}
+
+	DIV.Title
+	{
+		font-family: Arial, Georgia, Garamond, 'Lucida Sans';
+		top: auto;
+		vertical-align: bottom;
+		color: #646464;
+		font-size: 20pt;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top-style: none;
+		mc-auto-number-format: 'GH: {n+}';
+	}
+
+	MadCap|indexProxy
+	{
+		border-top-style: none;
+		mc-column-count: 1;
+	}
+
+	MadCap|footnote
+	{
+		color: #000000;
+	}
+
+	MadCap|xref.PropertyLink:visited
+	{
+		color: #0000ff;
+	}
+
+	H1.TOCTitle
+	{
+		margin-top: 0pt;
+		margin-bottom: 14pt;
+		font-family: Arial;
+		line-height: 24pt;
+		color: #646464;
+		mc-heading-level: 0;
+		mc-auto-number-class: TOCProxy;
+		font-size: 18pt;
+	}
+
+	H3
+	{
+		mc-heading-level: 0;
+	}
+
+	H4
+	{
+		mc-heading-level: 0;
+	}
+
+	h5
+	{
+		mc-heading-level: 0;
+	}
+
+	h6
+	{
+		mc-heading-level: 0;
+	}
+
+	H1.ChapterNumber
+	{
+		font-weight: bold;
+		font-family: Arial;
+		text-align: center;
+		color: #646464;
+		font-size: 16pt;
+		mc-auto-number-format: ;
+	}
+
+	H2.Heading2
+	{
+		color: #0055A6;
+	}
+
+	H4.Heading3
+	{
+		color: #0055a6;
+		font-family: Arial, Georgia, Garamond, 'Lucida Sans';
+		font-size: 10.5pt;
+	}
+
+	H4.Heading4
+	{
+		color: #0055A6;
+		font-size: 11pt;
+		mc-heading-level: 4;
+	}
+
+	H4.PropertyName
+	{
+		margin-bottom: 0pt;
+		font-family: "Arial";
+		font-weight: bold;
+		line-height: 11.5pt;
+		border: solid 1px;
+		padding-top: 15px;
+		color: #0055a6;
+		padding: 7px;
+		margin-top: 15pt;
+		font-size: 11.5pt;
+		mc-heading-level: 0;
+	}
+
+	H1.NotInTOC
+	{
+		color: #646464;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 14pt;
+		mc-heading-level: 0;
+	}
+
+	P.TOC1
+	{
+		color: #000000;
+		display: block;
+		mc-auto-number-format: '{R}Chapter {chapnum}:: {chapnum}::';
+	}
+
+	SPAN.TOCProxy
+	{
+		display: none;
+	}
+
+	H1.WhatsNew
+	{
+		color: #646464;
+		mc-auto-number-class: TOCProxy;
+		font-family: Arial;
+		font-size: 18pt;
+	}
+
+	DIV.Bullet1-1st
+	{
+		background-position: 0em 2em;
+	}
+
+	DIV.Bullet1-inner
+	{
+		background-attachment: scroll;
+		background-position: 0% 0%;
+	}
+
+	DIV.Bullet1-last
+	{
+		background-position: 0em 2.5em;
+	}
+
+	DIV.Bullet2-1st
+	{
+		background-position: 0% .5em;
+		padding-left: 1.5em;
+	}
+
+	DIV.Bullet2-inner
+	{
+		background-position: 0% .5em;
+		padding-left: 1.5em;
+	}
+
+	DIV.Bullet2-last
+	{
+		background-position: 0em .5em;
+		padding-left: 1.5em;
+		MadCap|xref: ;
+	}
+
+	SPAN.Code
+	{
+		color: #000000;
+		line-height: 12pt;
+		font-size: 10pt;
+	}
+
+	H3.Heading2
+	{
+		color: #0055a6;
+	}
+
+	DIV
+	{
+		font-family: Arial;
+	}
+
+	P
+	{
+		font-family: Arial;
+	}
+
+	P.XColCaption1
+	{
+		font-size: 10pt;
+	}
+
+	P.XColCaption
+	{
+		font-size: 10pt;
+	}
+
+	P.XColTbleCaption
+	{
+		font-size: 10pt;
+	}
+
+	P.XColTbleCaption1
+	{
+		font-size: 10pt;
+	}
+
+	DIV.Note
+	{
+		line-height: 1.3em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		background-image: url('../Images/NoteIcon.png');
+		mc-auto-number-format: ' {b}Note: {/b} ';
+		background-position-x: 0.3em;
+		padding-left: 2em;
+		padding-right: 0em;
+		padding-top: 0em;
+		padding-bottom: 0em;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-left-color: #0055a6;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-right-color: #0055a6;
+		border-top-style: solid;
+		border-top-width: 0px;
+		border-top-color: #0055a6;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-bottom-color: #0055a6;
+	}
+
+	DIV.Tip
+	{
+		background-image: url('../Images/TipIcon.png');
+		margin-top: 1.00em;
+		margin-bottom: 1.00em;
+		line-height: 1.3em;
+		padding-left: 2em;
+		padding-right: 0em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-left-color: #0055a6;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-right-color: #0055a6;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-top-color: #0055a6;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #0055a6;
+		background-position-x: 0.3em;
+		background-position-y: center;
+	}
+
+	DIV.NoteInd
+	{
+		background-position-x: 0.3em;
+		background-image: url('../Images/NoteIcon.png');
+		padding-left: 2em;
+		padding-right: 0em;
+		padding-top: 0em;
+		padding-bottom: 0em;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-left-color: #0055a6;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-right-color: #0055a6;
+		border-top-style: solid;
+		border-top-width: 0px;
+		border-top-color: #0055a6;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-bottom-color: #0055a6;
+	}
+
+	DIV.Caution
+	{
+		background-position-x: 0.3em;
+		padding-left: 2.00em;
+		background-image: url('../Images/caution.png');
+	}
+
+	MadCap|variable	/**/
+	{
+		
+	}
+
+	pre.prettyprint
+	{
+		background-color: #d1f0c0;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-left-color: #888;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-right-color: #888;
+		border-top-style: solid;
+		border-top-width: 0px;
+		border-top-color: #888;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-bottom-color: #888;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	table
+	{
+		
+	}
+}
+
+p.RightFooterPageNumber
+{
+	text-align: right;
+}
+
+MadCap|popupBody
+{
+	color: #191970;
+	font-family: Arial, Georgia, Garamond, 'Lucida Sans';
+	font-size: 10pt;
+	background-color: #f5f5f5;
+}
+
+a.hyperlink
+{
+	color: #0000ff;
+}
+
+table.PrintFooterTableRight
+{
+	width: 6.150in;
+}
+
+SPAN.emphasis
+{
+	font-style: italic;
+}
+
+tr.PropertyName
+{
+	padding: 4px;
+	padding-left: 12px;
+	border-bottom: solid 1px;
+}
+
+h5.PropertyName
+{
+	margin-bottom: 0pt;
+	font-family: "Arial";
+	font-weight: bold;
+	line-height: 11.5pt;
+	border: solid 1px;
+	padding-top: 15px;
+	background-color: #4169e1;
+	color: #ffffff;
+	padding: 7px;
+	border-bottom-color: #696969;
+	border-bottom-width: 7px;
+	border-bottom: none 4px;
+	margin-top: 15pt;
+	font-size: 11.5pt;
+}
+
+MadCap|dropDownHotspot
+{
+	
+}
+
+MadCap|dropDownHotspot.ChemicalProperty
+{
+	margin-bottom: 0pt;
+	font-family: "Arial";
+	font-weight: bold;
+	line-height: 11.5pt;
+	padding-top: 15px;
+	padding: 7px;
+	margin-top: 15pt;
+	font-size: 11.5pt;
+	border-bottom-width: 1px;
+	border-bottom: none 4px;
+}
+
+MadCap|xref.PropertyLink
+{
+	text-decoration: none;
+	mc-format: '{paratext}';
+	font-size: 8pt;
+}
+
+MadCap|xref.PropertyLink:hover
+{
+	color: #8b0000;
+}
+
+MadCap|xref
+{
+	mc-format: '{paratext}';
+}
+
+tbody.Chem3DFileFormat
+{
+	
+}
+
+MadCap|variable.ChapterNumber
+{
+	
+}
+
+H1.TOCTitle
+{
+	color: #0000ff;
+}
+
+H2.Heading1
+{
+	color: #0055a6;
+}
+
+H3.Heading2
+{
+	color: #ff0000;
+}
+
+H4.Heading3
+{
+	color: #0055a6;
+}
+
+H1.ChapterNumber
+{
+	mc-heading-level: 1;
+}
+
+H1.NotInTOC
+{
+	color: #0000ff;
+}
+
+DIV
+{
+	font-size: 10pt;
+	font-family: Arial;
+}
+
+H3
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 11pt;
+	font-family: Arial;
+}
+
+a.MiniTOC1:link
+{
+	color: #033688;
+	font-size: 9pt;
+}
+
+a.MiniTOC1:visited
+{
+	color: #033688;
+	font-size: 9pt;
+}
+
+a.MiniTOC1:hover
+{
+	color: #ff0000;
+}
+
+a.MCTextPopupSpot:link
+{
+	color: #6666ff;
+}
+
+a.MCTextPopupSpot:hover
+{
+	color: #ff0000;
+}
+

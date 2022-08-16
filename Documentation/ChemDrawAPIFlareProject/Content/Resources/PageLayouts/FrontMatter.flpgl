@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="7in" Height="9in" Padding="1in" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="title" Name="Title" Orientation="portrait" BleedLeft="0.25in" BleedRight="0.25in" BleedTop="0.25in" BleedBottom="0.25in">
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="654px" Height="864px" X="-104px" Y="4px" Anchors="Left,Right,Top,Bottom" Right="74px" Bottom="-4px">
+        </Frame>
+        <Frame X="-96px" Y="-2px" Width="278px" Height="92px" Flow="header" Right="442px" Bottom="774px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:p>
+                            <xhtml:img xhtml:src="../Images/Header.png" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="2px" Y="831px" Width="223px" Height="32px" Flow="decoration0" Right="399px" Bottom="1px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:style="font-family: 'Century Gothic';font-size: 9pt;"><xhtml:b>Last Updated:</xhtml:b> 16/08/2022</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="480px" Y="748px" Width="174px" Height="84px" Flow="decoration1" Right="-30px" Bottom="32px" TextAlign="right">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>
+                            <xhtml:img xhtml:src="../Images/footer_logo.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xhtml:style="max-height: 1.0in;width: 91px;height: 54px;" MadCap:mediastyle="@media print { max-height: 1.0in; }" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+    <Page Width="7in" Height="9in" Padding="1in" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="left" Name="Left" Orientation="portrait" BleedBottom="0.25in" BleedTop="0.25in" BleedRight="0.25in" BleedLeft="0.25in">
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="654px" Height="814px" X="0px" Y="20px" Anchors="Left,Right,Top,Bottom" Right="-30px" Bottom="30px">
+        </Frame>
+        <Frame Flow="footer" Anchors="Left,Right,Bottom" Right="-0.3125in" Bottom="-37px" X="0in" Y="863px" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="38px" VerticalAlign="top" TextAlign="center" Width="654px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col xhtml:style="width: 868px;" />
+                            <xhtml:col xhtml:style="width: 350px;" />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td xhtml:style="font-family: 'Century Gothic';font-size: 7pt;">
+                                        <MadCap:snippetBlock xhtml:src="../Snippets/Copyright.flsnp" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;font-family: 'Century Gothic';font-size: 7pt;"><MadCap:variable xhtml:name="System.PageNumber" /><xhtml:span xhtml:style="font-family: 'Century Gothic'; font-size: 7pt;"> of </xhtml:span><MadCap:variable xhtml:name="System.PageCount" xhtml:style="font-family: 'Century Gothic'; font-size: 7pt;" />
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="-2px" Y="-55px" Width="656px" Height="37px" Flow="header" Right="-30px" Bottom="882px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td>
+                                        <MadCap:snippetBlock xhtml:src="../Snippets/Header.flsnp" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;">
+                                        <xhtml:img xhtml:src="../Images/footer_logo.png" xhtml:style="max-height: 0.6in;width: 57px;height: 34px;" MadCap:mediastyle="@media print { max-height: 0.6in; }" />
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+    <Page Width="7in" Height="9in" Padding="1in" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="right" Name="Right" Orientation="portrait" BleedBottom="0.25in" BleedTop="0.25in" BleedRight="0.25in" BleedLeft="0.25in">
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="654px" Height="816px" X="0px" Y="19px" Right="-30px" Bottom="29px" Anchors="Left,Right,Top,Bottom">
+        </Frame>
+        <Frame Flow="footer" Anchors="Left,Right,Bottom" Right="-0.3125in" Bottom="-37px" X="0in" Y="863px" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="38px" VerticalAlign="top" TextAlign="center" Width="654px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col xhtml:style="width: 868px;" />
+                            <xhtml:col xhtml:style="width: 350px;" />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td xhtml:style="font-family: 'Century Gothic';font-size: 7pt;">
+                                        <MadCap:snippetBlock xhtml:src="../Snippets/Copyright.flsnp" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;font-family: 'Century Gothic';font-size: 7pt;"><MadCap:variable xhtml:name="System.PageNumber" /><xhtml:span xhtml:style="font-family: 'Century Gothic'; font-size: 7pt;"> of </xhtml:span><MadCap:variable xhtml:name="System.PageCount" xhtml:style="font-family: 'Century Gothic'; font-size: 7pt;" />
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="0px" Y="-55px" Width="654px" Height="37px" Flow="header" Right="-30px" Bottom="882px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td>
+                                        <MadCap:snippetBlock xhtml:src="../Snippets/Header.flsnp" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;">
+                                        <xhtml:img xhtml:src="../Images/footer_logo.png" xhtml:style="max-height: 6.6in;max-width: 1in;" MadCap:mediastyle="@media print { max-height: 0.6in; }" />
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

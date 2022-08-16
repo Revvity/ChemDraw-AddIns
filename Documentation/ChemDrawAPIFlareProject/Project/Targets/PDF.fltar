@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ChemDraw JavaScript API Reference Guide"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/ChemDrawAPI.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/Cambridgesoft1.css"
+  PatchHeadingLevels="false"
+  GlossaryTermConversion="first"
+  InjectEmptyPages="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Glossaries />
+  <RelationshipTables>
+    <RelationshipTable
+      Link="/Project/Advanced/Relationship Tables/RelationshipTable.flrtb" />
+  </RelationshipTables>
+  <PDF
+    ShowUsedBookmarks="false"
+    TitleBar="DocumentTitle"
+    ImageCompression="JPEG"
+    CollapsedBookmarks="false"
+    PageMode="UseOutlines" />
+  <DocumentProperties
+    Title="ChemDraw JavaScript API Reference Guide"
+    Author="PKI documentation team" />
+</CatapultTarget>

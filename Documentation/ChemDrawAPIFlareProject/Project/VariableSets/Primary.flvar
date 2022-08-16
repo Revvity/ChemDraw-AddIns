@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName">PerkinElmer</Variable>
+  <Variable
+    Comment=""
+    Name="PhoneNumber">858 123 4567</Variable>
+  <Variable
+    Name="ProductName"
+    Comment="">ChemDraw</Variable>
+  <Variable
+    Name="GuideName"
+    Comment=""
+    EvaluatedDefinition="JavaScript API Reference Guide 1.5">JavaScript API Reference Guide 1.5</Variable>
+  <Variable
+    Name="LastUpdated"
+    Comment=""
+    EvaluatedDefinition="09/01/2021">09/01/2021</Variable>
+</CatapultVariableSet>
