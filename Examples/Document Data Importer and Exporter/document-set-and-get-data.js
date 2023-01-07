@@ -6,7 +6,7 @@
 // The supported data formats are CDXML, CDX encoded as Base64, SMILES, InChI, InChIKey,
 // MolV2000, MolV3000, RXNV2000, RXNV3000, and PNG encoded as Base64.
 //
-// Copyright (c) 2017-2022 PerkinElmer, Inc. All rights reserved.
+// Copyright (c) 2017-2023 PerkinElmer, Inc. All rights reserved.
 
 // ESLint configuration
 /* global ChemDrawAPI, $ */
@@ -41,7 +41,7 @@ $(function() {
             }));
             break;
 
-        case 'png-scaled-150': 
+        case 'png-scaled-150':
             // Set all PNG options
             setImage(ChemDrawAPI.activeDocument.getPNGBase64Encoded({
                 transparent: true,
@@ -50,7 +50,7 @@ $(function() {
             }));
             break;
 
-        case 'png-scaled-75': 
+        case 'png-scaled-75':
             // Setting only scalePercent and other options get the default value (transparent: true, borderSizeInPixels: 0)
             setImage(ChemDrawAPI.activeDocument.getPNGBase64Encoded({
                 scalePercent: 75
@@ -75,7 +75,7 @@ $(function() {
 
         default:
             alert('Getting PNG image with the selected settings is not supported');
-        } 
+        }
     }
 
     function addData() {
