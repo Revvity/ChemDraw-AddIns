@@ -3,7 +3,7 @@
 //
 // This is a simple example of using ChemDraw JavaScript API.
 //
-// Copyright (c) 2017-2022 PerkinElmer, Inc. All rights reserved.
+// Copyright (c) 2017-2023 PerkinElmer, Inc. All rights reserved.
 
 // ESLint configuration
 /* global ChemDrawAPI */

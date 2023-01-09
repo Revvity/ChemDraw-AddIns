@@ -3,7 +3,7 @@
 //
 // This is an example of using ChemDraw Add-in API to get the selection in a document.
 //
-// Copyright (c) 2018-2022 PerkinElmer, Inc. All rights reserved.
+// Copyright (c) 2018-2023 PerkinElmer, Inc. All rights reserved.
 
 // ESLint configuration
 /* global ChemDrawAPI */
