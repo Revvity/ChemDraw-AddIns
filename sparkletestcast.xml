@@ -1,0 +1,12 @@
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+<channel>
+<title>ChemOffice Update</title>
+<description>The most recent update to ChemOffice</description>
+<language>en</language>
+<item>
+<title>Build 22.4.0.22</title>
+<pubDate>Thu, 20 May 2023 19:13:34 +00:00</pubDate>
+<enclosure url="https://www.dropbox.com/s/32mulqafciveip9/cd22.4.0.dmg?dl=1" sparkle:edSignature="drTYNvaxz2AOj4rnJk3H7oFaqw+j+wk87ahrlPzV/p2UaTCFzDsFTu5hoFukUxcrsmJQRc9G5E4atptLtueACQ==" length="211796204" sparkle:version="22.4.0.22" type="application/octet-stream"/>
+</item>
+</channel>
+</rss>
