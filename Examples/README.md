@@ -1,6 +1,6 @@
 # ChemDraw Add-in Examples
 
-Welcome to the ChemDraw add-in examples! This directory contains all the examples used in the [ChemDraw Add-in Developer Guide](https://github.com/PerkinElmer/ChemDraw-AddIns/tree/master/Documentation).
+Welcome to the ChemDraw add-in examples! This directory contains all the examples used in the ChemDraw Add-in Developer Guide.
 
 ## Hello World
 

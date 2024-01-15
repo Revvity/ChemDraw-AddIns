@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link href="https://unify-dev.scienceaccelerated.com/1.0.5/pe.css" rel="stylesheet">
-        
-        <script>
-            function onLoadBody() {
-                ChemDrawAPI.window.resizeTo(500, 230);
-            }
+    <link
+      href="https://unify-dev.scienceaccelerated.com/1.0.5/pe.css"
+      rel="stylesheet"
+    />
 
-            function changeLink() {
-                var url = document.getElementById('url').value;
-                document.getElementById('openLink').href = url;
-                return true;
-            }
+    <script>
+      function onLoadBody() {
+        ChemDrawAPI.window.resizeTo(500, 230);
+      }
 
-            function openURL() {
-                var url = document.getElementById('url').value;
+      function changeLink() {
+        var url = document.getElementById("url").value;
+        document.getElementById("openLink").href = url;
+        return true;
+      }
 
-                try {
-                    ChemDrawAPI.openURLInDefaultBrowser(url);
-                }
-                catch(err) {
-                    alert(err.message);
-                }
+      function openURL() {
+        var url = document.getElementById("url").value;
 
-                return false;
-            }            
-        </script>
-    </head>
- 
-    <body onload="onLoadBody()">
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h4>Open URL API Tester</h4>
-                    <br/>
-                </div>
-            </div>
-            <div class="row form-group">
-                <div class="col-xs-12">
-                    <input id="url" class="form-control" value="http://www.perkinelmer.com/category/chemdraw" type="text"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 text-center">
-                    <a id="openLink" href="#" onclick="changeLink()">Open url in this window</a>
-                </div>
-                <div class="col-xs-6 text-center">
-                    <a id="openLink" href="#" onclick="openURL()">Open url in default browser</a>
-                </div>
-            </div>
+        try {
+          ChemDrawAPI.openURLInDefaultBrowser(url);
+        } catch (err) {
+          alert(err.message);
+        }
+
+        return false;
+      }
+    </script>
+  </head>
+
+  <body onload="onLoadBody()">
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Open URL API Tester</h4>
+          <br />
         </div>
-    </body>
+      </div>
+      <div class="row form-group">
+        <div class="col-xs-12">
+          <input
+            id="url"
+            class="form-control"
+            value="https://revvitysignals.com/products/research/chemdraw"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 text-center">
+          <a id="openLink" href="#" onclick="changeLink()"
+            >Open url in this window</a
+          >
+        </div>
+        <div class="col-xs-6 text-center">
+          <a id="openLink" href="#" onclick="openURL()"
+            >Open url in default browser</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
