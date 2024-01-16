@@ -1,7 +1,7 @@
 //
 // App.test.tsx
 //
-// Copyright © 2019-2023 PerkinElmer, Inc. All rights reserved.
+// Copyright © 2019-2023 Revvity Signals Software, Inc. All rights reserved.
 //
 
 import * as React from "react";

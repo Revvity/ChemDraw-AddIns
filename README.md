@@ -1,15 +1,10 @@
 # ChemDraw Add-ins
+
 Welcome to ChemDraw add-ins! This repository contains documentation and examples for writing your own ChemDraw add-ins.
 
 ## Prerequisites
 
-### Windows
-
-You must install [ChemOffice Professional](http://www.perkinelmer.com/product/chemoffice-professional-chemofficepro) 17.1 or above to install and run the add-in examples.
-
-### Mac OS X
-
-You must install [ChemDraw Professional](http://www.perkinelmer.com/product/chemdraw-professional-chemdrawpro) 17.1 or above to install and run the add-in examples.
+You must install [ChemDraw](https://revvitysignals.com/products/research/chemdraw) 17.1 or above to install and run the add-in examples. Note that not all ChemDraw product levels support add-ins.
 
 ## Install Add-ins in ChemDraw
 
@@ -23,4 +18,4 @@ To run an add-in, go to **Add-ins** menu, and click on the menu item that repres
 
 ## Support
 
-This project is developed by [PerkinElmer, Inc.](www.perkinelmer.com) For support, go to https://www.cambridgesoft.com/contact/support/
+This project is developed by [Revvity Signals Software, Inc.](https://revvitysignals.com) For support, go to https://support.revvitysignals.com/

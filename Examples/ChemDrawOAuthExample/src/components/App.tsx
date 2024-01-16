@@ -1,7 +1,7 @@
 //
 // App.tsx
 //
-// Copyright © 2019-2023 PerkinElmer, Inc. All rights reserved.
+// Copyright © 2019-2023 Revvity Signals Software, Inc. All rights reserved.
 //
 
 import * as React from "react";
@@ -18,7 +18,6 @@ interface IAppState {
 }
 
 class App extends React.Component<any, IAppState> {
-
   public state: IAppState = { accessToken: "" };
 
   private appKey: string = "";
@@ -45,8 +44,18 @@ class App extends React.Component<any, IAppState> {
             <div className="col-8">
               <div className="form-group">
                 <label htmlFor="appKey">Dropbox app-key</label>
-                <input onChange={ this.appKeyValueChanged } type="text" className="form-control" id="appKey" aria-describedby="appKeyHelp" placeholder="Enter your Dropbox app-key"/>
-                <small className="form-text text-muted">The app-key for your application can be found in Dropbox's App Console</small>
+                <input
+                  onChange={this.appKeyValueChanged}
+                  type="text"
+                  className="form-control"
+                  id="appKey"
+                  aria-describedby="appKeyHelp"
+                  placeholder="Enter your Dropbox app-key"
+                />
+                <small className="form-text text-muted">
+                  The app-key for your application can be found in Dropbox's App
+                  Console
+                </small>
               </div>
             </div>
           </div>
@@ -56,14 +65,13 @@ class App extends React.Component<any, IAppState> {
                 Connect to Dropbox
               </Button>
             </div>
-          </div>          
+          </div>
         </div>
       );
     }
   }
 
   private connectToDropbox = () => {
-    
     if (this.appKey.length === 0) {
       alert("Dropbox app-key must be provided");
       return;
@@ -75,8 +83,7 @@ class App extends React.Component<any, IAppState> {
     );
 
     // Construct a URL for authorization containing the callback key
-    const dropboxOAuthUrl =
-      `https://www.dropbox.com/oauth2/authorize?client_id=${this.appKey}&response_type=token&redirect_uri=com.perkinelmer.chemdraw.addin:///&state=${callbackKey}`;
+    const dropboxOAuthUrl = `https://www.dropbox.com/oauth2/authorize?client_id=${this.appKey}&response_type=token&redirect_uri=com.revvity.chemdraw.addin:///&state=${callbackKey}`;
 
     // Open the URL in external browser to authorize
     ChemDrawAPI.openURLInDefaultBrowser(dropboxOAuthUrl);
@@ -93,19 +100,19 @@ class App extends React.Component<any, IAppState> {
   private onCallback = (arg: string) => {
     // Break the URL into key value pairs and extract access token
     const fragment = arg.substring(arg.indexOf("#") + 1);
-    const keyValueArray = fragment.split("&").map(pair => pair.split("="));
+    const keyValueArray = fragment.split("&").map((pair) => pair.split("="));
 
     const resultMap = new Map();
     keyValueArray.forEach(([key, value]) => resultMap.set(key, value));
 
     this.setState({
-      accessToken: resultMap.get("access_token")
+      accessToken: resultMap.get("access_token"),
     });
   };
 
   private appKeyValueChanged = (e: React.FormEvent<HTMLInputElement>) => {
     this.appKey = e.currentTarget.value;
-  }
+  };
 }
 
 export default App;
