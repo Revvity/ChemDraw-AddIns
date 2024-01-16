@@ -4,7 +4,7 @@ Welcome to ChemDraw add-ins! This repository contains documentation and examples
 
 ## Prerequisites
 
-You must install [ChemOffice](https://revvitysignals.com/products/research/chemdraw) 17.1 or above to install and run the add-in examples.
+You must install [ChemDraw](https://revvitysignals.com/products/research/chemdraw) 17.1 or above to install and run the add-in examples. Note that not all ChemDraw Product levels support add-ins.
 
 ## Install Add-ins in ChemDraw
 
